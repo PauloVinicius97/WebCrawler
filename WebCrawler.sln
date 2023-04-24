@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCrawler.ConsoleApp", "WebCrawler.ConsoleApp\WebCrawler.ConsoleApp.csproj", "{90DCE274-5E7E-4EB1-A00C-C24B0D5CB267}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCrawler.Application", "WebCrawler.Application\WebCrawler.Application.csproj", "{646C8BE3-236D-4B9B-BC85-566D9DC7EDC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCrawler.Data", "WebCrawler.Data\WebCrawler.Data.csproj", "{B1E37D82-9361-43C4-9588-4BCC9966A22B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCrawler.Domain", "WebCrawler.Domain\WebCrawler.Domain.csproj", "{29ADF33D-21D2-4957-B381-97A4A567F716}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{4582FE9A-A877-4834-9A32-4BFA8CA851A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCrawler.API", "WebCrawler.API\WebCrawler.API.csproj", "{7FB7E7F5-63CF-43E8-8213-C2847F8DA9E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1E37D82-9361-43C4-9588-4BCC9966A22B} = {B1E37D82-9361-43C4-9588-4BCC9966A22B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90DCE274-5E7E-4EB1-A00C-C24B0D5CB267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DCE274-5E7E-4EB1-A00C-C24B0D5CB267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DCE274-5E7E-4EB1-A00C-C24B0D5CB267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DCE274-5E7E-4EB1-A00C-C24B0D5CB267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{646C8BE3-236D-4B9B-BC85-566D9DC7EDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646C8BE3-236D-4B9B-BC85-566D9DC7EDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646C8BE3-236D-4B9B-BC85-566D9DC7EDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646C8BE3-236D-4B9B-BC85-566D9DC7EDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E37D82-9361-43C4-9588-4BCC9966A22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E37D82-9361-43C4-9588-4BCC9966A22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E37D82-9361-43C4-9588-4BCC9966A22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E37D82-9361-43C4-9588-4BCC9966A22B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29ADF33D-21D2-4957-B381-97A4A567F716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29ADF33D-21D2-4957-B381-97A4A567F716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29ADF33D-21D2-4957-B381-97A4A567F716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29ADF33D-21D2-4957-B381-97A4A567F716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB7E7F5-63CF-43E8-8213-C2847F8DA9E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB7E7F5-63CF-43E8-8213-C2847F8DA9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB7E7F5-63CF-43E8-8213-C2847F8DA9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB7E7F5-63CF-43E8-8213-C2847F8DA9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{646C8BE3-236D-4B9B-BC85-566D9DC7EDC0} = {4582FE9A-A877-4834-9A32-4BFA8CA851A5}
+		{B1E37D82-9361-43C4-9588-4BCC9966A22B} = {4582FE9A-A877-4834-9A32-4BFA8CA851A5}
+		{29ADF33D-21D2-4957-B381-97A4A567F716} = {4582FE9A-A877-4834-9A32-4BFA8CA851A5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65D8E42C-1BC4-4FE5-91B7-EE52A07C44E3}
+	EndGlobalSection
+EndGlobal
