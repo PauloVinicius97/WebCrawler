@@ -8,19 +8,19 @@ namespace WebCrawler.API.Controllers
     [ApiController]
     public class ProcessoController : ControllerBase
     {
-        private ProcessoAppService _processAppService;
+        private ProcessoAppService _processoAppService;
         private WebCrawlerTJBAAppService _webCrawlerTJBAAppService;
 
         public ProcessoController()
         {
-            _processAppService = new ProcessoAppService();
+            _processoAppService = new ProcessoAppService();
             _webCrawlerTJBAAppService = new WebCrawlerTJBAAppService();
         }
 
         [HttpGet("processos")]
         public List<ProcessoViewModel> GetProcessos()
         {
-            var processos = _processAppService.GetAllProcessos();
+            var processos = _processoAppService.GetAllProcessos();
 
             return processos;
         }
@@ -41,7 +41,7 @@ namespace WebCrawler.API.Controllers
         [HttpPost("addProcesso")]
         public ActionResult<ResultViewModel> AddProcesso([FromBody] ProcessoViewModel processo) 
         {
-            var result = _processAppService.AddProcesso(processo);
+            var result = _processoAppService.AddProcesso(processo);
 
             if (result.Success == true)
             {
@@ -54,7 +54,7 @@ namespace WebCrawler.API.Controllers
         [HttpPut("updateProcesso/{processNumber}")]
         public ActionResult<ResultViewModel> UpdateProcesso([FromBody] ProcessoViewModel processo, string processNumber)
         {
-            var result = _processAppService.UpdateProcesso(processNumber, processo);
+            var result = _processoAppService.UpdateProcesso(processNumber, processo);
 
             if (result.Success == true)
             {
@@ -67,7 +67,7 @@ namespace WebCrawler.API.Controllers
         [HttpDelete("removeProcesso/{processNumber}")]
         public ActionResult<ResultViewModel> RemoveProcesso(string processNumber)
         {
-            var result = _processAppService.RemoveProcesso(processNumber);
+            var result = _processoAppService.RemoveProcesso(processNumber);
 
             if (result.Success == true)
             {
