@@ -28,5 +28,4 @@ Eis alguns pontos de melhoria que gostaria de explorar no futuro:
 - Implementar padrão UnitOfWork;
 - Implementar inversão de controle com injeção de dependência;
 - Mensagens de erro mais amigáveis para alguns casos de uso da API;
-- Mudar chave da entidade Processo para um ID e não o código do processo;
 - Incluir caminho do banco de dados em um JSON de configuração.
