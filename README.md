@@ -22,7 +22,7 @@ Defina **WebCrawler.API** como projeto de inicialização e execute-o.
 
 ## To-dos
 
-Eis alguns pontos de melhoria que gostaria de explorar no futuro:
+Eis alguns pontos que foram repriorizados durante o desenvolvimento e que gostaria de explorar no futuro:
 
 - Implementar padrão Repository;
 - Implementar padrão UnitOfWork;
