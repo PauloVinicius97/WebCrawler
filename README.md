@@ -17,12 +17,12 @@ Defina **WebCrawler.API** como projeto de inicialização e execute-o.
 
 ## Notas sobre o código
 
-- Dividi a tarefa de coletar o processo do site do TJBA e fazer o CRUD em dois AppServicesm, considerando que um AppService seja um caso de uso;
+- Dividi a tarefa de coletar o processo do site do TJBA e fazer o CRUD em dois AppServices, mesmo que façam parte do mesmo grupo de casos de uso, pois o código ficou grande;
 - Repositórios não estão sendo utilizados.
 
 ## To-dos
 
-Assim como um [livro nunca é terminado, mas sim abandonado](https://www.goodreads.com/quotes/192509-a-book-is-never-finished-it-s-abandoned), creio que sempre existam pontos de evolução e melhoria de um programa. Eis alguns pontos que gostaria de explorar no futuro:
+Eis alguns pontos de melhoria que gostaria de explorar no futuro:
 
 - Implementar padrão Repository;
 - Implementar padrão UnitOfWork;
